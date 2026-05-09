@@ -1,0 +1,20 @@
+# NTCF 配置 - Bakry-Emery 曲率版本
+embedding_size: 64
+n_layers: 3  # 基础传播层数
+
+# 曲率相关参数
+curvature_strategy: 'bakry_emery'  # bakry_emery
+curvature_threshold: 0.1  # 判断为"均匀曲率"的阈值范围 (±threshold)
+
+# 聚合策略
+aggregation_type: 'concat'  # mean: 层间均值聚合 (推荐，梯度更稳定), concat: NGCF 风格拼接
+
+# 正则化和 Dropout
+reg_weight: 1e-05
+mess_dropout: 0.1
+
+# 超参数搜索空间
+# n_layers: [2, 3, 4]
+# curvature_threshold: [0.05, 0.1, 0.2]
+# mess_dropout: [0.0, 0.1, 0.2]
+# reg_weight: [1e-02, 1e-03, 1e-04]
