@@ -31,18 +31,9 @@ from recbole_gnn.model.abstract_recommender import GeneralGraphRecommender
 from recbole_gnn.model.layers import BiGNNConv
 
 
-# ntcf.py 重构版 - Bakry-Emery 曲率版本
+
 class NTCF(GeneralGraphRecommender):
-    """
-    NTCF: Neural Tree Collaborative Filtering with Bakry-Emery Curvature
-    Optimized version based on NGCF architecture with curvature-based adaptive layer propagation
-    
-    Key Innovation:
-        - Uses Bakry-Emery curvature to determine propagation depth per node
-        - Positive curvature (popular items): propagate fewer layers (layer - 1)
-        - Negative curvature (niche items): propagate more layers (layer + 1)
-        - Near-zero curvature (normal): propagate standard layers
-    """
+
     input_type = InputType.PAIRWISE
     
     def __init__(self, config, dataset):
