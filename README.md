@@ -24,11 +24,13 @@ python main.py
 
 If you find NTCF useful in your research, please consider citing our [NTCF paper](https://arxiv.org/pdf/2608.10297).
 
-```
-@article{xu2026neural,
+````
+@inproceedings{xu2026ntcf,
   title={Neural Tree Collaborative Filtering: Rethinking Graph Collaborative Filtering as Tree Collaborative Filtering with Curvature-Aware Propagation Depth},
-  author={Xu, Jinfeng and Chen, Zheyu and Peng, Ziyue and Yang, Shuo and Li, Jinze and Yuan, Wenhao and Chen, Jian and Ngai, Edith CH},
-  journal={arXiv preprint arXiv:2608.10297},
+  author={Xu, Jinfeng and Chen, Zheyu and Peng, Ziyue and Yang, Shuo and Li, Jinze and Yuan, Wenhao and Chen, Jian and Li, Shujie and Ngai, Edith C. H.},
+  booktitle={Proceedings of the 35th ACM International Conference on Information and Knowledge Management},
+  pages={7991--7996},
   year={2026}
 }
 ```
+````
